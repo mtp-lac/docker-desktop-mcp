@@ -2,15 +2,13 @@
     - id: docker-desktop-mcp
       name: '@deepseek-ai/dsh-mcp-client'
       config:
-        serverName: desktop-commander
+        serverName: docker
         transport: stdio
         command: docker
         args:
           - mcp
           - gateway
           - run
-          - --profile
-          - terminal_control
         toolCallTimeoutMs: 120000
         startupTimeoutMs: 180000
         failOnStartupError: false
