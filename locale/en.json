@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Docker Desktop MCP Toolkit",
+    "description": "Connects this Harness to the Docker MCP gateway that Docker Desktop runs, so the MCP servers enabled in your Docker MCP Toolkit profile become agent tools named mcp__desktop-commander__<tool>. The gateway is started on demand with `docker mcp gateway run --profile <profile>` and its tools are drawn from that profile, which on this machine enables desktop-commander, filesystem, fetch and duckduckgo. Turn the plugin off to stop the gateway and remove the tools; no tool runs until the agent calls one. Tools act with your Docker Desktop permissions, so a tool that writes files or runs commands changes the mounted paths, and the gateway refuses host paths outside its allowed roots until MCP_GATEWAY_DOCKER_BIND_ALLOWED_PATHS permits them.",
+    "detail": "docs/DETAIL.md"
+  }
+}

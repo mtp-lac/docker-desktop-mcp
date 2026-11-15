@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Docker Desktop MCP 工具包",
+    "description": "把本 Harness 连接到 Docker Desktop 运行的 MCP 网关，使 Docker MCP 工具包配置档（profile）中启用的 MCP 服务器变成名为 mcp__desktop-commander__<工具> 的智能体工具。网关按需以 `docker mcp gateway run --profile <profile>` 启动，工具来自该配置档；本机配置档启用了 desktop-commander、filesystem、fetch 和 duckduckgo。关闭插件即停止网关并移除这些工具，智能体未调用时不会执行任何工具。工具以你的 Docker Desktop 权限运行，会写入文件或执行命令的工具会实际改动挂载路径；对于允许根目录之外的宿主机路径，网关会拒绝挂载，除非用 MCP_GATEWAY_DOCKER_BIND_ALLOWED_PATHS 放开。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

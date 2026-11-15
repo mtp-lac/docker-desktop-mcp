@@ -1,0 +1,21 @@
+- insert:
+    - id: docker-desktop-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: desktop-commander
+        transport: stdio
+        command: docker
+        args:
+          - mcp
+          - gateway
+          - run
+          - --profile
+          - terminal_control
+        toolCallTimeoutMs: 120000
+        startupTimeoutMs: 180000
+        failOnStartupError: false
+        reconnect:
+          enabled: true
+          initialDelayMs: 1000
+          maxDelayMs: 30000
+          maxAttempts: 10
